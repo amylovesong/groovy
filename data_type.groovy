@@ -17,6 +17,20 @@ println "aMap['key2']: " + aMap['key2']
 aMap.anotherkey = "I am map"
 println "aMap: " + aMap
 
+//注意key的正确使用方式
+def playMap() {
+	println("playMap:")
+	def map = [a: "a", b: "b"]
+	println(map)
+
+	def key = "name"
+	def map2 = [key: 'a']
+	def map3 = [(key): 'a']
+	println(map2)
+	println(map3)
+}
+playMap()
+
 println "\nRange example:"
 def aRange = 1..5
 def aRangeWithoutEnd = 1..<5
