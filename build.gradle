@@ -1,0 +1,21 @@
+// task training
+task hello {
+    doLast {
+        println 'Hello,'
+    }
+}
+
+task World << {
+	println 'World!'
+}
+
+task hi {
+	println 'description hi'
+}
+
+//dependsOn & finalizedBy
+task intro(dependsOn: hello) << {
+	println 'intro'
+}
+
+World.finalizedBy hello
