@@ -36,3 +36,5 @@ def aRange = 1..5
 def aRangeWithoutEnd = 1..<5
 println "aRange: " + aRange
 println "aRangeWithoutEnd: " + aRangeWithoutEnd
+println "aRange.from: " + aRange.from
+println "aRangeWithoutEnd.to: " + aRangeWithoutEnd.to
