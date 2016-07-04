@@ -32,6 +32,7 @@ destFile.withOutputStream {
 		os << ins //利用OutputStream的<<操作符重载，完成从InputStream到OutputStream的输出
 	}
 }
+println "Copy file end."
 
 
 
