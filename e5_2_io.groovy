@@ -29,7 +29,7 @@ destFile.withOutputStream {
 	os -> 
 	srcFile.withInputStream {
 		ins ->
-		os << ins
+		os << ins //利用OutputStream的<<操作符重载，完成从InputStream到OutputStream的输出
 	}
 }
 
